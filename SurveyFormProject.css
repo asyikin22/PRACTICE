@@ -1,0 +1,104 @@
+.header-container{                /*highlight header*/
+    background-color: beige;
+}
+
+
+body{
+    line-height: 2;            /*jarakkan lines*/
+    text-align: center;
+    background-image: url(https://i.pinimg.com/564x/67/18/22/671822c2f63dd5f65d8fd15c9710420b.jpg);
+   
+  }
+  
+  form {
+    background-color: rgba(182, 255, 248, 0.8);
+    width: 80%;
+    max-width: 500px;
+    padding: 25px;
+    border:3px none black;   
+    border-radius: 20px;        /*bucu*/
+    margin-left: auto;          /*ketengahkan form*/
+    margin-right: auto;
+
+  }
+  
+ input {                     /*the box where we input answer text*/
+    margin: 10px 0 0 0;
+    padding: 3px;
+    border: none;
+    border-radius: 5px;
+  
+  }
+  
+  select {                     /*dropdown*/
+    padding: 3px;              /*copy and paste from input lol*/
+    border: none;
+    border-radius: 5px;
+  }
+  
+  h1 {                          /*Learning Experience Survey Form*/
+    text-align: center;
+    font-size: 40px;
+    font-family: Tahoma;
+    color: blue;
+    padding: 10px;
+    width: 100%;
+    height: 100px;
+  }
+  
+  p {                             /*feedback paragraph*/
+    text-align: center;
+    font-size:30px;
+    font-family: Tahoma;
+    color: black;
+    line-height: 20px;
+    
+  } 
+
+  .name, .email, .age, .occupation {     /*target class*/
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+    color: black;
+  }
+
+  .feedback legend {                    /*soalan recommendation + fav subject*/
+    color: blue;
+    font-weight: bold;
+  }
+
+  .occupation label,                /*jadikan dropdown dan soalan dalam barisan sama*/
+  .occupation select {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+
+  hr {                              /*garisan antara bio, feedback & comment*/
+    margin-top: 10px;
+  }
+
+.additional-comment,
+.agree      {
+    color: black;
+}
+
+.additional-comment textarea{        /*adjust size box*/
+    width: 60%;
+}
+
+submit {
+    width: 60%;
+}
+ 
+button[type="submit"] {
+    width: 100px;
+    border-radius: 5px;
+    border: solid;
+   
+}
+
+footer {
+    line-height: 1px;
+}
+    

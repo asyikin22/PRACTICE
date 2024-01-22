@@ -1,0 +1,110 @@
+* {                         /*letakkan kesemua elemen dalam border-box*/
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+  display: flex;
+  justify-content:center;          /*ketengahkan semua elemen*/
+  align-items: center;
+  min-height: 100vh;               /*turunkan elemen ke tengah page*/
+  background: url(https://png.pngtree.com/background/20210716/original/pngtree-galaxy-abstract-glitter-background-picture-image_1391042.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {                          /*class selector target the whole <form> in <div>*/
+width: 420px;
+background: transparent;
+border:2px solid rgba(255, 255, 255, .2);
+backdrop-filter: blur(20px);
+color: green;
+border-radius: 20px;
+padding: 30px 40px;                 /* T R B L - kecilkan kotak input*/
+}
+
+.wrapper h1 {
+    font-size: 40px;               /*besarkan font Login*/
+    text-align: center;
+}
+
+.input-box {                       /*customize kotak input*/
+    position: relative;            /*berkait dengan icon(i), masukkan icon ke dalam kotak input*/
+    width: 100%;
+    height: 50px;
+    margin:30px 0;
+}
+
+.input-box input {
+    width: 100%;                   /*panjangkan kotak input dalam defined border*/
+    height: 100%;                  /*penuhkan (turunkan) kotak input dalam background 'input-box*/
+    background: transparent;       /*jadikan kotak input see through*/
+    border: none;
+    outline: none;
+    border: 2px solid rgb(32, 228, 228);  /*border kotak input*/
+    border-radius: 40px;                    /*bucu*/
+    font-size: 16px;
+    color: black;                   /*color font bertukar bila dapat input*/
+    padding: 20px 45px 20px 20px;   /* top, right, bottom, left*/
+}
+
+.input-box input :: placeholder {
+    color: white;
+}
+
+.input-box i{
+    position: absolute;             /*pindahkan icon ke hujung kotak input*/
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.remember-forgot {                      /*ketengahkan 'remember me' + forgot password'*/
+    display: flex;
+    justify-content: space-between;     /*jarakkan antara perkataan*/
+    font-size: 14.5px;
+    margin: -15px 0 15px;               /*-15 top margin, 0 right margin, 15 bottom, left*/
+}
+
+
+.remember-forgot a {                     /*tukar font ke hijau + get rid of underline*/
+    text-decoration: none;
+    color: green;           
+}
+
+.remember-forgot a:hover {              /*bila cursor lalu, perkataan digariskan*/
+    text-decoration: underline;
+}
+
+.button{                                 /*class selector targetting class=button*/
+    width: 100%;                         /*panjangkan button hingga ke hujung border form*/
+    height: 45px;                        /*tebalkan button*/
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 40px;                                 /*bucu*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;                      /*cursor akan bertukar jadi pointer (tangan) bila cursor lalu*/
+    color: #333;
+    font-weight: 600;                     /*bold-kan perkataan*/
+}
+
+.register-link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;                 
+} 
+
+.register-link a {                        /*tukar font jadi hijau, buang underline, bold*/
+    color: green;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link a:hover {                 /*bila cursor lalu, perkataan digariskan*/
+    text-decoration: underline;
+}

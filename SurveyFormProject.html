@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="SurveyFormProject.css">
+</head>
+
+<body>
+
+<div class="header-container">
+    <h1 id="title"> Learning Experience Survey Form </h1>
+</div>
+
+<form id="survey-form">
+
+    <p id="description"> We'd love to hear your feedback!</p>
+  
+    <div class="name">
+  <label id="name-label">Name: <input id="name" type="text" placeholder="Enter your name" required>
+  </label>
+  </div>
+
+  <div class="email">
+  <label id="email-label">Email: <input id="email" type="email" placeholder="Enter your email"  required>
+  </label>
+  </div>
+
+  <div class="age">
+  <label id="number-label">Age: <input id="number" type="number" min="13" max="25" placeholder="Age" required>
+  </label>
+    </div>
+
+    <div class="occupation">
+    <label for="occupation">What is your occupation?</label>
+    <select name="occupation" id="dropdown">
+        <option>Select an option<option>
+        <option>Employed<option>
+        <option>Unemployed<option>
+        <option>Student</option>
+    </select>
+
+    </div>
+
+ <br>
+
+    <hr>
+
+ <div class="feedback">
+
+  <legend>Would you recommend this course to your friends?</legend>
+  <input type="radio" id="yes" name ="recommendation" value="Yes"> 
+    <label for="id">Yes</label>
+  <input type="radio" id="no" name ="recommendation" value="No">
+    <label for="id">No</label>
+  <input type="radio" id="maybe" name ="recommendation" value="Maybe">
+    <label for="id">Maybe</label>
+
+    <br>
+
+ <legend>What is your favorite subject?</legend>
+ <input type="checkbox" value="subject1">
+   <label label for="subject1">Math</label>
+ <input type="checkbox" value="subject2">
+   <label label for="subject2">Science</label>
+ <input type="checkbox" value="subject3">
+   <label label for="subject4">Arts</label>
+ <input type="checkbox" value="subject4">
+  <label label for="subject4">Nothing appeals to me</label>
+  
+ </div>
+
+ <hr>
+
+ <div class="additional-comment">
+ <legend id="additional-comment">Additional comment:</legend>
+ <textarea placeholder="Enter your comment here"></textarea>
+ </div>
+
+ <label class="agree">
+    <input id="agree" type="checkbox" name="agree" required>
+    I have read and agree to the <a href="https://www.freecodecamp.org/" target="_blank">privacy policy</a>
+ </label>
+
+ <br>     
+
+ <button type="submit">Submit</button>
+
+ <hr>
+
+ <footer>
+
+    <h5>KelasProgramming.com</h5>
+    &copy; 2024 KelasProgramming. All rights reserved.
+
+ </footer>
+
+</form>
+
+</body>
+
+</html>
