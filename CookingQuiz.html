@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CookingQuiz.css">
+    <title>Food quiz</title>
+ </head>
+
+ <body>
+    <header>
+        <img id="logo" src="https://img.freepik.com/free-vector/cute-chef-girl-uniform-character-holding-pot-food-restaurant-logo-cartoon-art-illustration_56104-1599.jpg?size=626&ext=jpg&ga=GA1.1.2116175301.1701648000&semt=ais" alt="logo">
+        <h1>Food Quiz</h1>
+         <nav>
+            <ul>
+                <li><a href="#info">Info</a></li>
+                <li><a href="#recipe">Recipe</a></li>
+                <li><a href="#tutorial">Tutorial</a></li>
+            </ul>
+         </nav>
+    </header>
+
+    <main>
+        <form>                                      <!--To be able to navigate within the page, give each anchor element an href corresponding to the id of the h2 elements.-->
+            <section>                               <!--add three div elements with a class of info.-->
+                <h2 id="info">Info</h2>             <!--within each div nest one label element, and one input element.-->
+                                                    <!--Link label-input. give the label a 'for' attribute, which contains the 'id' of the input.-->
+                                                    <!--give each input an appropriate 'type' and 'name' attribute.-->
+                <div>                               
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name"/>
+                </div>
+
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email"/>
+                </div>
+
+                <div>
+                    <label for="DOB">D.O.B:</label>
+                    <input type="date" name="DOB"  id="DOB"/>
+                </div>
+
+            </section>
+                
+                                                                <!--add two div elements with a class of question-block.-->
+                                                                <!--Add 'p' element and 'fieldset' with a class of question-->
+                                                                <!--each fieldset will contain a true/false question.-->
+                                                                <!--in fieldset: nest 1 legend element + 1 ul element with 2 options.-->
+                                                                <!--give fieldset a name attribute-->
+            <section>   
+                 <h2 id="recipe">Recipe</h2>
+                    <div class="question-block"></div> 
+                        <p>Question 1</p>
+                        <fieldset class="question" name="question-1">
+                            <legend>Cooking our own food at home is better than eating outside</legend>     <!--legend to caption the content of the fieldset-->
+                            <ul lass="answers-list">                                                        <!-- give both <ul> a class of answers-list.-->
+                                <li>                                                                        <!--nest 'label' element in <li>-->
+                                    <label for="q1-a1">                                                     <!--nest input element in label + type -->
+                                        <input type="radio" id="q1-a1" name="q1" value="true"/>             <!--Link label(for)-input(id)-->
+                                        True                                                                <!--add 'name' and 'value' to enable only 1 input at a time-->
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="q1-a2">
+                                        <input type="radio" id="q1-a2" name="q1" value="false"/>
+                                        False
+                                    </label>
+                                </li>
+                            </ul>
+
+                        </fieldset>
+
+                    <div class="question-block"></div>
+                        <p>Question 2</p>
+                        <fieldset class="question" name="question-2">
+                            <legend>Do you want to learn about recipes you can try at home?</legend>
+                            <ul class="answers-list">
+                                <li>
+                                    <label for="q2-a1">
+                                        <input type="radio" id="q2-a2" name="q1" value="yes"/>
+                                        Yes
+                                    </label>
+                                </li>
+
+                                <li>
+                                    <label for="q2-a2">
+                                        <input type="radio" id="q2-a2" name="q1" value="no"/>
+                                        No
+                                    </label>
+                                </li>
+                            </ul>
+                            
+                        </fieldset>
+            </section>
+               
+            <section>
+                <h2 id="tutorial">Tutorial</h2>
+
+                <div class="formrow">                                       <!--Question and Answer element has its own <div>-->
+                    <div class="question-block">                            <!--link label(for) - select(name)-->
+                        <label for="cook">Are you a good cook?</label>
+                    </div>
+                    
+                    <div class="answer">
+                        <select name="cook" required>                       <!--indicates that an option MUST be selected-->
+                            <option value="">Select an option</option>      <!--value is the answer (Yes/no) sent to the server-->
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+
+                    <div class="question-block"></div>                             <!--placeholder gives a hint to user what to write-->
+                        <label for="tutorial">Do you have any question?</label>            <!--Link label (for)-textarea (id)-->
+                    <div class="answer">                                    
+                        <textarea rows="5" cols="40" id="tutorial" name="tutorial" placeholder="Enter your question here"></textarea>       
+                    </div>
+                    
+                </div>
+
+            </section>
+
+            <button type="submit">Submit</button>
+        </form>
+    </main>
+
+    <footer>
+        <address>
+            GoodFoodRecipe.com <br/>
+            2200 E POLAR BEAR CT <br/>
+            NORTH POLE AK 99705-5500 <br/>
+            USA <br/>
+        </address>
+    </footer>
+
+ </body>
+
+</html>

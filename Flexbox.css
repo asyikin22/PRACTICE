@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;  /*used to set the size of elements in a container*/
+}
+
+.gallery img {               /*adjust the size of image*/
+    width: 100%;
+    max-width: 350px;
+    height: 300px;           /*keep all images a uniform size*/
+    object-fit: cover;       /*tell the image to fill the img container while maintains aspect ratio*/
+    border-radius: 15px;
+}
+
+body {
+    margin:0;
+    font-family: sans-serif;
+    background-color: bisque;
+}
+
+header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    background-color: green;
+    color: white;
+    border-bottom: 4px solid black;
+}
+
+.gallery {                      /*Flexbox can control the way items are spaced out and aligned within a container.*/
+    display: flex;              /*this makes the images arranged horizontally (default behavior)*/
+    flex-direction: row;        /*column will arrange the images vertically*/
+    flex-wrap: wrap;            /*allow the items to wrap to the next row or column */
+    justify-content: center;    /*determine position of items*/
+    align-items: center;        /*position the flex content along cross axis*/
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;             /* max-width and margin centers the images*/
+    gap: 15px;
+}
